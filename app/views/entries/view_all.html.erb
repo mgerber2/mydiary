@@ -1,0 +1,6 @@
+<%= session[:requests] %>
+<% @entries.each do |entry| %>
+	<h1><%= entry.title %></h1>
+	<p><%= entry.content %></p>
+	<p><em>Posted at <%= entry.created_at %></em></p>
+<% end %>
